@@ -1,0 +1,80 @@
+/* -----------------------Form------------------------------ */
+.form_container {
+  width: 50vw;
+  height: 30vh;
+  border: black solid;
+  background-color: aliceblue;
+  margin: 5% 25% 2% 25%;
+  text-align: center;
+}
+
+.form_container p {
+  font-size: 28px;
+}
+
+.form_container input {
+  width: 80%;
+  height: 10%;
+  font-size: 18px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form_container button {
+  width: 15%;
+  height: 10%;
+  background-color: #3399FF;
+  color: white;
+  margin-top: 4%;
+  cursor: pointer;
+}
+
+/* -----------------------List------------------------------ */
+
+.list_container {
+  width: 50vw;
+  height:40vh;
+  text-align: center;
+  background-color: #EEEEEE	;
+  margin: 1% 25%;
+  overflow: scroll;
+}
+
+.single_task {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.single_task h5 {
+  width: 80%;
+  text-align: left;
+}
+
+.task_links {
+  margin-top: 4%;
+  margin-left: 2%;
+  width: 10%;
+}
+
+.check {
+  color:chartreuse;
+  margin-top: 4.5%;
+  margin-right: 2%;
+}
+
+.edit-link {
+  font-size: 1.2em;
+  margin-right: 5%;
+  margin-top: 50%;
+}
+
+.delete-btn {
+  color: red;
+}
+
+body {
+  background-color: #EEEEEE	;
+}
