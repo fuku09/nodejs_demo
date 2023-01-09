@@ -13,6 +13,7 @@ const getAllTasks = async (req,res) => {
 
 const createTask = async (req,res) => {
     try {
+        res.set({ 'Access-Control-Allow-Origin': '*' });
         const createTask = await Task.create(req.body);
         res.status(200).json(createTask);
     } catch (err) {

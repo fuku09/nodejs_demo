@@ -12,33 +12,21 @@ const showTasks = async () => {
         const allTasks = tasks.map((task) => {
             const { completed, _id, name } = task;
             // ListのHTML要素をTaskの数だけ返す
-            return `
-            {/* 擬似的にタスクを追加する */}
-            <div className="single_task">
-                <FontAwesomeIcon className="check" icon={faCheckCircle} />
-                <h5>${name}</h5>
-                <div className="task_links">
-
-                    {/* 編集リンク */}
-                    <a href="#" className="edit-link">
-                        <FontAwesomeIcon icon={faEdit} />
-                    </a>
-                        
-                    {/* ゴミ箱リンク */}
-                    <button type="button" className="delete-btn" >
-                        <FontAwesomeIcon icon={faTrash} />
-                    </button>
-                </div>
-            </div>
-            `
-            
+            return name;     
         });
         return allTasks;
     } catch(err) {
         console.log(err);
     }
-};
+}
 
+// const showTasks = () => {
+//     return new Promise((resolve, reject) => {
+//         fetch("http://localhost:5001/api/v1/tasks")
+//             .then((res) => res.json())
+//             .then((data) => resolve(data));
+//     });
+// };
 
 
 export {showTasks};
